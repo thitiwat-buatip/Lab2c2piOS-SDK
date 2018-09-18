@@ -1,0 +1,648 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DAFBAEE8732232A25983B874 /* Pods_Demo_2c2p.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5358E71225FE8DDBFE3ABB85 /* Pods_Demo_2c2p.framework */; };
+		FA0D5D5C214A3AB200B193B3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0D5D5B214A3AB200B193B3 /* AppDelegate.swift */; };
+		FA0D5D5E214A3AB200B193B3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0D5D5D214A3AB200B193B3 /* ViewController.swift */; };
+		FA0D5D63214A3AB400B193B3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA0D5D62214A3AB400B193B3 /* Assets.xcassets */; };
+		FA0D5D66214A3AB400B193B3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA0D5D64214A3AB400B193B3 /* LaunchScreen.storyboard */; };
+		FA1C70B6214B6D6800194D64 /* Payment.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA1C70B5214B6D6800194D64 /* Payment.storyboard */; };
+		FA1C70B9214B739F00194D64 /* PaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1C70B8214B739F00194D64 /* PaymentViewController.swift */; };
+		FA1C70BD214B73FE00194D64 /* EventDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1C70BC214B73FE00194D64 /* EventDetailTableViewCell.swift */; };
+		FA1C70BF214B740D00194D64 /* RunnerDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1C70BE214B740D00194D64 /* RunnerDetailTableViewCell.swift */; };
+		FA1C70C1214B742200194D64 /* PaymentOptionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1C70C0214B742200194D64 /* PaymentOptionTableViewCell.swift */; };
+		FA1C70C3214B771900194D64 /* TotalPayTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1C70C2214B771900194D64 /* TotalPayTableViewCell.swift */; };
+		FA1C70C5214B7C4300194D64 /* CounterService.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA1C70C4214B7C4300194D64 /* CounterService.storyboard */; };
+		FA1C70C7214B7C5E00194D64 /* CounterServiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1C70C6214B7C5E00194D64 /* CounterServiceViewController.swift */; };
+		FA1C70CC214B8F7200194D64 /* PaymentSelectCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1C70CB214B8F7200194D64 /* PaymentSelectCollectionViewCell.swift */; };
+		FA1C70CE214BA8C500194D64 /* BankChannels.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA1C70CD214BA8C500194D64 /* BankChannels.storyboard */; };
+		FA32699C214A468200186C29 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = FA32699B214A468200186C29 /* libz.tbd */; };
+		FA32699E214A468B00186C29 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA32699D214A468B00186C29 /* QuartzCore.framework */; };
+		FA3269A0214A46A200186C29 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA32699F214A46A200186C29 /* Security.framework */; };
+		FA53B52D2150E52C009674C3 /* libmy2c2pSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FA53B52B2150E52B009674C3 /* libmy2c2pSDK.a */; };
+		FA53B52E2150E52C009674C3 /* my2c2pResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = FA53B52C2150E52B009674C3 /* my2c2pResources.bundle */; };
+		FA53B5302150E54D009674C3 /* Config2c2p.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA53B52F2150E54D009674C3 /* Config2c2p.swift */; };
+		FAB3475B214F4D3E00D86CE5 /* BankServiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB3475A214F4D3E00D86CE5 /* BankServiceViewController.swift */; };
+		FAB34769214F7DA700D86CE5 /* YoshikoTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB3475D214F7DA700D86CE5 /* YoshikoTextField.swift */; };
+		FAB3476A214F7DA700D86CE5 /* HoshiTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB3475F214F7DA700D86CE5 /* HoshiTextField.swift */; };
+		FAB3476B214F7DA700D86CE5 /* MinoruTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB34760214F7DA700D86CE5 /* MinoruTextField.swift */; };
+		FAB3476C214F7DA700D86CE5 /* YokoTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB34761214F7DA700D86CE5 /* YokoTextField.swift */; };
+		FAB3476D214F7DA700D86CE5 /* TextFieldEffects.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB34762214F7DA700D86CE5 /* TextFieldEffects.swift */; };
+		FAB3476E214F7DA700D86CE5 /* JiroTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB34763214F7DA700D86CE5 /* JiroTextField.swift */; };
+		FAB3476F214F7DA700D86CE5 /* MadokaTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB34764214F7DA700D86CE5 /* MadokaTextField.swift */; };
+		FAB34770214F7DA700D86CE5 /* KaedeTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB34765214F7DA700D86CE5 /* KaedeTextField.swift */; };
+		FAB34771214F7DA700D86CE5 /* AkiraTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB34766214F7DA700D86CE5 /* AkiraTextField.swift */; };
+		FAB34772214F7DA700D86CE5 /* IsaoTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB34767214F7DA700D86CE5 /* IsaoTextField.swift */; };
+		FAB34773214F7DA700D86CE5 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FAB34768214F7DA700D86CE5 /* Info.plist */; };
+		FAFE2D51214F96940069C9AA /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAFE2D50214F96940069C9AA /* Login.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		06D4A61F7DB32880AD711137 /* Pods-Demo_2c2p.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Demo_2c2p.release.xcconfig"; path = "Pods/Target Support Files/Pods-Demo_2c2p/Pods-Demo_2c2p.release.xcconfig"; sourceTree = "<group>"; };
+		5358E71225FE8DDBFE3ABB85 /* Pods_Demo_2c2p.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Demo_2c2p.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9BB8163C84569D9870B1FD5A /* Pods-Demo_2c2p.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Demo_2c2p.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Demo_2c2p/Pods-Demo_2c2p.debug.xcconfig"; sourceTree = "<group>"; };
+		FA0D5D58214A3AB200B193B3 /* Demo_2c2p.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo_2c2p.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA0D5D5B214A3AB200B193B3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FA0D5D5D214A3AB200B193B3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FA0D5D62214A3AB400B193B3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FA0D5D65214A3AB400B193B3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FA0D5D67214A3AB400B193B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA1C70B5214B6D6800194D64 /* Payment.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Payment.storyboard; sourceTree = "<group>"; };
+		FA1C70B8214B739F00194D64 /* PaymentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentViewController.swift; sourceTree = "<group>"; };
+		FA1C70BC214B73FE00194D64 /* EventDetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailTableViewCell.swift; sourceTree = "<group>"; };
+		FA1C70BE214B740D00194D64 /* RunnerDetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunnerDetailTableViewCell.swift; sourceTree = "<group>"; };
+		FA1C70C0214B742200194D64 /* PaymentOptionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentOptionTableViewCell.swift; sourceTree = "<group>"; };
+		FA1C70C2214B771900194D64 /* TotalPayTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalPayTableViewCell.swift; sourceTree = "<group>"; };
+		FA1C70C4214B7C4300194D64 /* CounterService.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CounterService.storyboard; sourceTree = "<group>"; };
+		FA1C70C6214B7C5E00194D64 /* CounterServiceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterServiceViewController.swift; sourceTree = "<group>"; };
+		FA1C70CB214B8F7200194D64 /* PaymentSelectCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentSelectCollectionViewCell.swift; sourceTree = "<group>"; };
+		FA1C70CD214BA8C500194D64 /* BankChannels.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BankChannels.storyboard; sourceTree = "<group>"; };
+		FA326998214A44FD00186C29 /* Bridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Bridge.h; sourceTree = "<group>"; };
+		FA32699B214A468200186C29 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		FA32699D214A468B00186C29 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		FA32699F214A46A200186C29 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		FA53B5252150E52B009674C3 /* SecureTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecureTextField.h; sourceTree = "<group>"; };
+		FA53B5262150E52B009674C3 /* SubMerchant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubMerchant.h; sourceTree = "<group>"; };
+		FA53B5272150E52B009674C3 /* My2c2pSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = My2c2pSDK.h; sourceTree = "<group>"; };
+		FA53B5282150E52B009674C3 /* otpViewControllerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = otpViewControllerDelegate.h; sourceTree = "<group>"; };
+		FA53B5292150E52B009674C3 /* my2c2pPaymentFormViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = my2c2pPaymentFormViewController.h; sourceTree = "<group>"; };
+		FA53B52A2150E52B009674C3 /* my2c2pHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = my2c2pHeader.h; sourceTree = "<group>"; };
+		FA53B52B2150E52B009674C3 /* libmy2c2pSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libmy2c2pSDK.a; sourceTree = "<group>"; };
+		FA53B52C2150E52B009674C3 /* my2c2pResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = my2c2pResources.bundle; sourceTree = "<group>"; };
+		FA53B52F2150E54D009674C3 /* Config2c2p.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config2c2p.swift; sourceTree = "<group>"; };
+		FAB3475A214F4D3E00D86CE5 /* BankServiceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankServiceViewController.swift; sourceTree = "<group>"; };
+		FAB3475D214F7DA700D86CE5 /* YoshikoTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YoshikoTextField.swift; sourceTree = "<group>"; };
+		FAB3475E214F7DA700D86CE5 /* TextFieldEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextFieldEffects.h; sourceTree = "<group>"; };
+		FAB3475F214F7DA700D86CE5 /* HoshiTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HoshiTextField.swift; sourceTree = "<group>"; };
+		FAB34760214F7DA700D86CE5 /* MinoruTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MinoruTextField.swift; sourceTree = "<group>"; };
+		FAB34761214F7DA700D86CE5 /* YokoTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YokoTextField.swift; sourceTree = "<group>"; };
+		FAB34762214F7DA700D86CE5 /* TextFieldEffects.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldEffects.swift; sourceTree = "<group>"; };
+		FAB34763214F7DA700D86CE5 /* JiroTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JiroTextField.swift; sourceTree = "<group>"; };
+		FAB34764214F7DA700D86CE5 /* MadokaTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MadokaTextField.swift; sourceTree = "<group>"; };
+		FAB34765214F7DA700D86CE5 /* KaedeTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KaedeTextField.swift; sourceTree = "<group>"; };
+		FAB34766214F7DA700D86CE5 /* AkiraTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AkiraTextField.swift; sourceTree = "<group>"; };
+		FAB34767214F7DA700D86CE5 /* IsaoTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IsaoTextField.swift; sourceTree = "<group>"; };
+		FAB34768214F7DA700D86CE5 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAFE2D50214F96940069C9AA /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FA0D5D55214A3AB200B193B3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA3269A0214A46A200186C29 /* Security.framework in Frameworks */,
+				FA32699E214A468B00186C29 /* QuartzCore.framework in Frameworks */,
+				FA32699C214A468200186C29 /* libz.tbd in Frameworks */,
+				DAFBAEE8732232A25983B874 /* Pods_Demo_2c2p.framework in Frameworks */,
+				FA53B52D2150E52C009674C3 /* libmy2c2pSDK.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0D27D5F58EA2D3CB4B1B2CE4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FA32699F214A46A200186C29 /* Security.framework */,
+				FA32699D214A468B00186C29 /* QuartzCore.framework */,
+				FA32699B214A468200186C29 /* libz.tbd */,
+				5358E71225FE8DDBFE3ABB85 /* Pods_Demo_2c2p.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		56EF10782C2E85CCE4DBFDDF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9BB8163C84569D9870B1FD5A /* Pods-Demo_2c2p.debug.xcconfig */,
+				06D4A61F7DB32880AD711137 /* Pods-Demo_2c2p.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		FA0D5D4F214A3AB200B193B3 = {
+			isa = PBXGroup;
+			children = (
+				FA326998214A44FD00186C29 /* Bridge.h */,
+				FA0D5D5A214A3AB200B193B3 /* Demo_2c2p */,
+				FA0D5D59214A3AB200B193B3 /* Products */,
+				56EF10782C2E85CCE4DBFDDF /* Pods */,
+				0D27D5F58EA2D3CB4B1B2CE4 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FA0D5D59214A3AB200B193B3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FA0D5D58214A3AB200B193B3 /* Demo_2c2p.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FA0D5D5A214A3AB200B193B3 /* Demo_2c2p */ = {
+			isa = PBXGroup;
+			children = (
+				FA53B5202150E52B009674C3 /* my2c2pSDK_v3.5.0 */,
+				FAB3475C214F7DA700D86CE5 /* TextFieldEffects */,
+				FA1C70BA214B73C300194D64 /* Model */,
+				FA1C70B7214B727400194D64 /* Scene */,
+				FA1C70B4214B6D1F00194D64 /* Storyboard */,
+				FA0D5D5B214A3AB200B193B3 /* AppDelegate.swift */,
+				FA53B52F2150E54D009674C3 /* Config2c2p.swift */,
+				FA0D5D5D214A3AB200B193B3 /* ViewController.swift */,
+				FA0D5D62214A3AB400B193B3 /* Assets.xcassets */,
+				FA0D5D64214A3AB400B193B3 /* LaunchScreen.storyboard */,
+				FA0D5D67214A3AB400B193B3 /* Info.plist */,
+			);
+			path = Demo_2c2p;
+			sourceTree = "<group>";
+		};
+		FA1C70B4214B6D1F00194D64 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				FA1C70B5214B6D6800194D64 /* Payment.storyboard */,
+				FA1C70C4214B7C4300194D64 /* CounterService.storyboard */,
+				FA1C70CD214BA8C500194D64 /* BankChannels.storyboard */,
+				FAFE2D50214F96940069C9AA /* Login.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		FA1C70B7214B727400194D64 /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+				FA1C70B8214B739F00194D64 /* PaymentViewController.swift */,
+				FA1C70C6214B7C5E00194D64 /* CounterServiceViewController.swift */,
+				FAB3475A214F4D3E00D86CE5 /* BankServiceViewController.swift */,
+			);
+			path = Scene;
+			sourceTree = "<group>";
+		};
+		FA1C70BA214B73C300194D64 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FA1C70C8214B8F2700194D64 /* PaymentSelect */,
+				FA1C70BB214B73D200194D64 /* Payment */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FA1C70BB214B73D200194D64 /* Payment */ = {
+			isa = PBXGroup;
+			children = (
+				FA1C70BC214B73FE00194D64 /* EventDetailTableViewCell.swift */,
+				FA1C70BE214B740D00194D64 /* RunnerDetailTableViewCell.swift */,
+				FA1C70C0214B742200194D64 /* PaymentOptionTableViewCell.swift */,
+				FA1C70C2214B771900194D64 /* TotalPayTableViewCell.swift */,
+			);
+			path = Payment;
+			sourceTree = "<group>";
+		};
+		FA1C70C8214B8F2700194D64 /* PaymentSelect */ = {
+			isa = PBXGroup;
+			children = (
+				FA1C70CB214B8F7200194D64 /* PaymentSelectCollectionViewCell.swift */,
+			);
+			path = PaymentSelect;
+			sourceTree = "<group>";
+		};
+		FA53B5202150E52B009674C3 /* my2c2pSDK_v3.5.0 */ = {
+			isa = PBXGroup;
+			children = (
+				FA53B5212150E52B009674C3 /* my2c2p */,
+			);
+			path = my2c2pSDK_v3.5.0;
+			sourceTree = "<group>";
+		};
+		FA53B5212150E52B009674C3 /* my2c2p */ = {
+			isa = PBXGroup;
+			children = (
+				FA53B5222150E52B009674C3 /* usr */,
+				FA53B52B2150E52B009674C3 /* libmy2c2pSDK.a */,
+				FA53B52C2150E52B009674C3 /* my2c2pResources.bundle */,
+			);
+			path = my2c2p;
+			sourceTree = "<group>";
+		};
+		FA53B5222150E52B009674C3 /* usr */ = {
+			isa = PBXGroup;
+			children = (
+				FA53B5232150E52B009674C3 /* local */,
+			);
+			path = usr;
+			sourceTree = "<group>";
+		};
+		FA53B5232150E52B009674C3 /* local */ = {
+			isa = PBXGroup;
+			children = (
+				FA53B5242150E52B009674C3 /* include */,
+			);
+			path = local;
+			sourceTree = "<group>";
+		};
+		FA53B5242150E52B009674C3 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				FA53B5252150E52B009674C3 /* SecureTextField.h */,
+				FA53B5262150E52B009674C3 /* SubMerchant.h */,
+				FA53B5272150E52B009674C3 /* My2c2pSDK.h */,
+				FA53B5282150E52B009674C3 /* otpViewControllerDelegate.h */,
+				FA53B5292150E52B009674C3 /* my2c2pPaymentFormViewController.h */,
+				FA53B52A2150E52B009674C3 /* my2c2pHeader.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		FAB3475C214F7DA700D86CE5 /* TextFieldEffects */ = {
+			isa = PBXGroup;
+			children = (
+				FAB3475D214F7DA700D86CE5 /* YoshikoTextField.swift */,
+				FAB3475E214F7DA700D86CE5 /* TextFieldEffects.h */,
+				FAB3475F214F7DA700D86CE5 /* HoshiTextField.swift */,
+				FAB34760214F7DA700D86CE5 /* MinoruTextField.swift */,
+				FAB34761214F7DA700D86CE5 /* YokoTextField.swift */,
+				FAB34762214F7DA700D86CE5 /* TextFieldEffects.swift */,
+				FAB34763214F7DA700D86CE5 /* JiroTextField.swift */,
+				FAB34764214F7DA700D86CE5 /* MadokaTextField.swift */,
+				FAB34765214F7DA700D86CE5 /* KaedeTextField.swift */,
+				FAB34766214F7DA700D86CE5 /* AkiraTextField.swift */,
+				FAB34767214F7DA700D86CE5 /* IsaoTextField.swift */,
+				FAB34768214F7DA700D86CE5 /* Info.plist */,
+			);
+			path = TextFieldEffects;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FA0D5D57214A3AB200B193B3 /* Demo_2c2p */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA0D5D6A214A3AB400B193B3 /* Build configuration list for PBXNativeTarget "Demo_2c2p" */;
+			buildPhases = (
+				33DFC1A5FAD13C86C3AC76F3 /* [CP] Check Pods Manifest.lock */,
+				FA0D5D54214A3AB200B193B3 /* Sources */,
+				FA0D5D55214A3AB200B193B3 /* Frameworks */,
+				FA0D5D56214A3AB200B193B3 /* Resources */,
+				B72AC77042C0ED99F7B0D5E2 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Demo_2c2p;
+			productName = Demo_2c2p;
+			productReference = FA0D5D58214A3AB200B193B3 /* Demo_2c2p.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FA0D5D50214A3AB200B193B3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = Banana;
+				TargetAttributes = {
+					FA0D5D57214A3AB200B193B3 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+				};
+			};
+			buildConfigurationList = FA0D5D53214A3AB200B193B3 /* Build configuration list for PBXProject "Demo_2c2p" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FA0D5D4F214A3AB200B193B3;
+			productRefGroup = FA0D5D59214A3AB200B193B3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FA0D5D57214A3AB200B193B3 /* Demo_2c2p */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FA0D5D56214A3AB200B193B3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAFE2D51214F96940069C9AA /* Login.storyboard in Resources */,
+				FA0D5D66214A3AB400B193B3 /* LaunchScreen.storyboard in Resources */,
+				FA1C70B6214B6D6800194D64 /* Payment.storyboard in Resources */,
+				FA1C70C5214B7C4300194D64 /* CounterService.storyboard in Resources */,
+				FA0D5D63214A3AB400B193B3 /* Assets.xcassets in Resources */,
+				FA1C70CE214BA8C500194D64 /* BankChannels.storyboard in Resources */,
+				FA53B52E2150E52C009674C3 /* my2c2pResources.bundle in Resources */,
+				FAB34773214F7DA700D86CE5 /* Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		33DFC1A5FAD13C86C3AC76F3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Demo_2c2p-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B72AC77042C0ED99F7B0D5E2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Demo_2c2p/Pods-Demo_2c2p-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Demo_2c2p/Pods-Demo_2c2p-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FA0D5D54214A3AB200B193B3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA1C70CC214B8F7200194D64 /* PaymentSelectCollectionViewCell.swift in Sources */,
+				FA1C70BF214B740D00194D64 /* RunnerDetailTableViewCell.swift in Sources */,
+				FA1C70C1214B742200194D64 /* PaymentOptionTableViewCell.swift in Sources */,
+				FA1C70C7214B7C5E00194D64 /* CounterServiceViewController.swift in Sources */,
+				FAB34771214F7DA700D86CE5 /* AkiraTextField.swift in Sources */,
+				FA53B5302150E54D009674C3 /* Config2c2p.swift in Sources */,
+				FAB34769214F7DA700D86CE5 /* YoshikoTextField.swift in Sources */,
+				FA0D5D5E214A3AB200B193B3 /* ViewController.swift in Sources */,
+				FAB34770214F7DA700D86CE5 /* KaedeTextField.swift in Sources */,
+				FA0D5D5C214A3AB200B193B3 /* AppDelegate.swift in Sources */,
+				FA1C70B9214B739F00194D64 /* PaymentViewController.swift in Sources */,
+				FAB3476E214F7DA700D86CE5 /* JiroTextField.swift in Sources */,
+				FA1C70BD214B73FE00194D64 /* EventDetailTableViewCell.swift in Sources */,
+				FAB3476D214F7DA700D86CE5 /* TextFieldEffects.swift in Sources */,
+				FAB3476F214F7DA700D86CE5 /* MadokaTextField.swift in Sources */,
+				FAB3475B214F4D3E00D86CE5 /* BankServiceViewController.swift in Sources */,
+				FAB3476C214F7DA700D86CE5 /* YokoTextField.swift in Sources */,
+				FAB3476A214F7DA700D86CE5 /* HoshiTextField.swift in Sources */,
+				FAB34772214F7DA700D86CE5 /* IsaoTextField.swift in Sources */,
+				FA1C70C3214B771900194D64 /* TotalPayTableViewCell.swift in Sources */,
+				FAB3476B214F7DA700D86CE5 /* MinoruTextField.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FA0D5D64214A3AB400B193B3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA0D5D65214A3AB400B193B3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FA0D5D68214A3AB400B193B3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FA0D5D69214A3AB400B193B3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FA0D5D6B214A3AB400B193B3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9BB8163C84569D9870B1FD5A /* Pods-Demo_2c2p.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 66LXTJRV3F;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/my2c2pSDKFramework_v3.5.0",
+				);
+				INFOPLIST_FILE = Demo_2c2p/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/my2c2pSDK_v3.5.0/my2c2p",
+					"$(PROJECT_DIR)/Demo_2c2p/my2c2pSDK_v3.5.0/my2c2p",
+					"$(PROJECT_DIR)/Demo_2c2p/my2c2pSDK_v3.0.5/my2c2p",
+				);
+				OTHER_LDFLAGS = (
+					"-lstdc++",
+					"-ObjC",
+					"$(inherited)",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "th.co.banana.Demo-2c2p";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = Bridge.h;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		FA0D5D6C214A3AB400B193B3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 06D4A61F7DB32880AD711137 /* Pods-Demo_2c2p.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 66LXTJRV3F;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/my2c2pSDKFramework_v3.5.0",
+				);
+				INFOPLIST_FILE = Demo_2c2p/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/my2c2pSDK_v3.5.0/my2c2p",
+					"$(PROJECT_DIR)/Demo_2c2p/my2c2pSDK_v3.5.0/my2c2p",
+					"$(PROJECT_DIR)/Demo_2c2p/my2c2pSDK_v3.0.5/my2c2p",
+				);
+				OTHER_LDFLAGS = (
+					"-lstdc++",
+					"-ObjC",
+					"$(inherited)",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "th.co.banana.Demo-2c2p";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = Bridge.h;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FA0D5D53214A3AB200B193B3 /* Build configuration list for PBXProject "Demo_2c2p" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA0D5D68214A3AB400B193B3 /* Debug */,
+				FA0D5D69214A3AB400B193B3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA0D5D6A214A3AB400B193B3 /* Build configuration list for PBXNativeTarget "Demo_2c2p" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA0D5D6B214A3AB400B193B3 /* Debug */,
+				FA0D5D6C214A3AB400B193B3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FA0D5D50214A3AB200B193B3 /* Project object */;
+}

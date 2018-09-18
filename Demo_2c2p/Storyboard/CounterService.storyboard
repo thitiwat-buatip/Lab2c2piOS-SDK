@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fnT-Ra-PQ8">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--ชำระเงินผ่านร้านค้า-->
+        <scene sceneID="QA8-aM-wBO">
+            <objects>
+                <viewController storyboardIdentifier="CounterServiceViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Ej3-JG-bXB" customClass="CounterServiceViewController" customModule="Demo_2c2p" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ZrP-j4-lAH">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="ZaT-sr-I8f">
+                                <rect key="frame" x="0.0" y="88" width="375" height="170"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="170" id="Tup-NV-qis"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="8" minimumInteritemSpacing="0.0" id="DwE-48-rW5">
+                                    <size key="itemSize" width="100" height="80"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CouterServiceCollectionViewCell" id="ysg-7I-INC" customClass="PaymentSelectCollectionViewCell" customModule="Demo_2c2p" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="100" height="80"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="100" height="80"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ywg-Io-AVn">
+                                                    <rect key="frame" x="0.0" y="0.0" width="100" height="80"/>
+                                                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                                </view>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xvh-Ov-0fP">
+                                                    <rect key="frame" x="10" y="0.0" width="80" height="80"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="80" id="OAn-0w-iQ5"/>
+                                                        <constraint firstAttribute="width" constant="80" id="oM2-g8-bHW"/>
+                                                    </constraints>
+                                                </imageView>
+                                            </subviews>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="ywg-Io-AVn" secondAttribute="trailing" id="JF9-Sr-6QH"/>
+                                            <constraint firstItem="ywg-Io-AVn" firstAttribute="top" secondItem="ysg-7I-INC" secondAttribute="top" id="KqH-3O-kDJ"/>
+                                            <constraint firstItem="xvh-Ov-0fP" firstAttribute="centerY" secondItem="ysg-7I-INC" secondAttribute="centerY" id="Lfh-Pl-bcl"/>
+                                            <constraint firstAttribute="bottom" secondItem="ywg-Io-AVn" secondAttribute="bottom" id="bbh-DL-pVN"/>
+                                            <constraint firstItem="ywg-Io-AVn" firstAttribute="leading" secondItem="ysg-7I-INC" secondAttribute="leading" id="knD-Bm-sdg"/>
+                                            <constraint firstItem="xvh-Ov-0fP" firstAttribute="centerX" secondItem="ysg-7I-INC" secondAttribute="centerX" id="uz6-Ay-Vwc"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="backGroudView" destination="ywg-Io-AVn" id="tit-F2-rum"/>
+                                            <outlet property="iconImage" destination="xvh-Ov-0fP" id="xqd-pz-1D7"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="กรุณาเลือกช่องทางการชำระเงิน" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RCt-EU-D5f">
+                                <rect key="frame" x="8" y="266" width="359" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="xNG-OZ-WvG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="ชื่อ - นามสกุล" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rYH-aJ-1Nv" customClass="HoshiTextField" customModule="Demo_2c2p" customModuleProvider="target">
+                                <rect key="frame" x="20" y="295" width="335" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="tTf-mc-BSk"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderInactiveColor">
+                                        <color key="value" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderActiveColor">
+                                        <color key="value" red="0.58188301320000002" green="0.21569153669999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                        <color key="value" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="placeholderFontScale">
+                                        <real key="value" value="0.80000000000000004"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="อีเมล" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="V88-AJ-yFa" customClass="HoshiTextField" customModule="Demo_2c2p" customModuleProvider="target">
+                                <rect key="frame" x="20" y="353" width="335" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="TQ4-wA-8JA"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderInactiveColor">
+                                        <color key="value" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderActiveColor">
+                                        <color key="value" red="0.58188301320000002" green="0.21569153669999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                        <color key="value" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="placeholderFontScale">
+                                        <real key="value" value="0.80000000000000004"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="เบอร์โทรศัพท์" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fF0-tt-794" customClass="HoshiTextField" customModule="Demo_2c2p" customModuleProvider="target">
+                                <rect key="frame" x="20" y="411" width="335" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="uQV-4t-F1U"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderInactiveColor">
+                                        <color key="value" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderActiveColor">
+                                        <color key="value" red="0.58188301320000002" green="0.21569153669999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                        <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="placeholderFontScale">
+                                        <real key="value" value="0.80000000000000004"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7kH-pg-gva">
+                                <rect key="frame" x="72.666666666666686" y="708" width="230" height="50"/>
+                                <color key="backgroundColor" red="0.0" green="0.56031829119999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="230" id="Ff3-qx-6gY"/>
+                                    <constraint firstAttribute="height" constant="50" id="reb-2z-6xh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                                <color key="tintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="ยืนยันการชำระเงิน">
+                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="confrimAction:" destination="Ej3-JG-bXB" eventType="touchUpInside" id="Dpa-jX-fpo"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="wWO-n9-pBN" firstAttribute="trailing" secondItem="V88-AJ-yFa" secondAttribute="trailing" constant="20" id="0pb-D8-yKF"/>
+                            <constraint firstItem="fF0-tt-794" firstAttribute="leading" secondItem="wWO-n9-pBN" secondAttribute="leading" constant="20" id="1ev-C8-ZYX"/>
+                            <constraint firstItem="wWO-n9-pBN" firstAttribute="trailing" secondItem="RCt-EU-D5f" secondAttribute="trailing" constant="8" id="BGl-wh-v5E"/>
+                            <constraint firstItem="V88-AJ-yFa" firstAttribute="top" secondItem="rYH-aJ-1Nv" secondAttribute="bottom" constant="8" id="BtH-ML-YC4"/>
+                            <constraint firstItem="fF0-tt-794" firstAttribute="top" secondItem="V88-AJ-yFa" secondAttribute="bottom" constant="8" id="HDd-iE-bNF"/>
+                            <constraint firstItem="ZaT-sr-I8f" firstAttribute="trailing" secondItem="wWO-n9-pBN" secondAttribute="trailing" id="KSN-U1-WuM"/>
+                            <constraint firstItem="wWO-n9-pBN" firstAttribute="bottom" secondItem="7kH-pg-gva" secondAttribute="bottom" constant="20" id="KsK-EN-iZO"/>
+                            <constraint firstItem="7kH-pg-gva" firstAttribute="centerX" secondItem="ZrP-j4-lAH" secondAttribute="centerX" id="N4a-Su-sDB"/>
+                            <constraint firstItem="wWO-n9-pBN" firstAttribute="trailing" secondItem="rYH-aJ-1Nv" secondAttribute="trailing" constant="20" id="P5v-hN-C2A"/>
+                            <constraint firstItem="wWO-n9-pBN" firstAttribute="trailing" secondItem="fF0-tt-794" secondAttribute="trailing" constant="20" id="QT7-Vj-yPB"/>
+                            <constraint firstItem="rYH-aJ-1Nv" firstAttribute="top" secondItem="RCt-EU-D5f" secondAttribute="bottom" constant="8" id="er7-NT-lIH"/>
+                            <constraint firstItem="rYH-aJ-1Nv" firstAttribute="leading" secondItem="wWO-n9-pBN" secondAttribute="leading" constant="20" id="iec-YR-ocy"/>
+                            <constraint firstItem="ZaT-sr-I8f" firstAttribute="top" secondItem="wWO-n9-pBN" secondAttribute="top" id="kij-JH-mEK"/>
+                            <constraint firstItem="ZaT-sr-I8f" firstAttribute="leading" secondItem="wWO-n9-pBN" secondAttribute="leading" id="nbh-s6-qxg"/>
+                            <constraint firstItem="RCt-EU-D5f" firstAttribute="top" secondItem="ZaT-sr-I8f" secondAttribute="bottom" constant="8" id="o6L-NS-3yP"/>
+                            <constraint firstItem="V88-AJ-yFa" firstAttribute="leading" secondItem="wWO-n9-pBN" secondAttribute="leading" constant="20" id="xMo-DR-bLH"/>
+                            <constraint firstItem="RCt-EU-D5f" firstAttribute="leading" secondItem="wWO-n9-pBN" secondAttribute="leading" constant="8" id="yWV-9I-Fxg"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="wWO-n9-pBN"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="ชำระเงินผ่านร้านค้า" id="SNJ-fq-x29"/>
+                    <connections>
+                        <outlet property="collectionView" destination="ZaT-sr-I8f" id="NtE-Y7-L2z"/>
+                        <outlet property="confrimBtn" destination="7kH-pg-gva" id="9cZ-iL-KET"/>
+                        <outlet property="counterNameLabel" destination="RCt-EU-D5f" id="9dk-Jl-zDY"/>
+                        <outlet property="emailTxt" destination="V88-AJ-yFa" id="dbu-be-ft3"/>
+                        <outlet property="nameTxt" destination="rYH-aJ-1Nv" id="lT2-G1-T4y"/>
+                        <outlet property="telTxt" destination="fF0-tt-794" id="2oD-Zb-P7B"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tF0-kD-iuc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1110" y="152.11267605633802"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="7XI-md-g9K">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="fnT-Ra-PQ8" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="eZa-cb-pql">
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Ej3-JG-bXB" kind="relationship" relationship="rootViewController" id="qeq-Qz-Asd"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vpf-ze-8MT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="173.59999999999999" y="153.37331334332833"/>
+        </scene>
+    </scenes>
+</document>

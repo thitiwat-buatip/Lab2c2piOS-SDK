@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="o9b-Ei-U7Z">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--รายการของคุณ-->
+        <scene sceneID="468-EW-dSk">
+            <objects>
+                <viewController storyboardIdentifier="PaymentViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="8b1-MR-PPV" customClass="PaymentViewController" customModule="Demo_2c2p" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4YD-PR-rtS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="SUs-Fh-Oka">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="EventDetailTableViewCell" rowHeight="300" id="JVU-DB-4nV" customClass="EventDetailTableViewCell" customModule="Demo_2c2p" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="300"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="JVU-DB-4nV" id="Wph-yB-jm6">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="299.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Demo Event" translatesAutoresizingMaskIntoConstraints="NO" id="zbj-UN-a5E">
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="200" id="2dt-WN-3q1"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="บัตรเข้าแข่งขัน : " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="obe-8N-ftB">
+                                                    <rect key="frame" x="15" y="237" width="345" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="21" id="C9b-Lo-afy"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ราคา : " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BvM-KS-l9u">
+                                                    <rect key="frame" x="15" y="266" width="345" height="20"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="20" id="2Up-92-Tdf"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="*กรุณาตรวจสอบข้อมูลการสมัครก่อนชำระเงิน*" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UuX-nZ-yFM">
+                                                    <rect key="frame" x="23" y="208" width="329" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="21" id="IO9-9u-DFG"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <color key="textColor" red="1" green="0.14913141730000001" blue="0.0" alpha="0.72600064212328763" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="zbj-UN-a5E" secondAttribute="trailing" id="6AO-2M-z9x"/>
+                                                <constraint firstItem="UuX-nZ-yFM" firstAttribute="leading" secondItem="Wph-yB-jm6" secondAttribute="leadingMargin" constant="8" id="FrF-4g-Afv"/>
+                                                <constraint firstItem="zbj-UN-a5E" firstAttribute="leading" secondItem="Wph-yB-jm6" secondAttribute="leading" id="GtH-fl-GHk"/>
+                                                <constraint firstItem="BvM-KS-l9u" firstAttribute="leading" secondItem="Wph-yB-jm6" secondAttribute="leadingMargin" id="MJk-bu-DaB"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="UuX-nZ-yFM" secondAttribute="trailing" constant="8" id="Qkf-3q-VcC"/>
+                                                <constraint firstItem="UuX-nZ-yFM" firstAttribute="top" secondItem="zbj-UN-a5E" secondAttribute="bottom" constant="8" id="cFO-Zr-cYT"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="obe-8N-ftB" secondAttribute="trailing" id="gSv-O4-tmS"/>
+                                                <constraint firstItem="BvM-KS-l9u" firstAttribute="top" secondItem="obe-8N-ftB" secondAttribute="bottom" constant="8" id="iQ5-8h-UUI"/>
+                                                <constraint firstItem="obe-8N-ftB" firstAttribute="leading" secondItem="Wph-yB-jm6" secondAttribute="leadingMargin" id="pHJ-ci-ECL"/>
+                                                <constraint firstItem="zbj-UN-a5E" firstAttribute="top" secondItem="Wph-yB-jm6" secondAttribute="top" id="qfW-3Y-neK"/>
+                                                <constraint firstItem="obe-8N-ftB" firstAttribute="top" secondItem="UuX-nZ-yFM" secondAttribute="bottom" constant="8" id="siX-DY-ozp"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="BvM-KS-l9u" secondAttribute="trailing" id="uc6-f0-cSp"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="eventImage" destination="zbj-UN-a5E" id="li3-6j-4Ac"/>
+                                            <outlet property="eventTickerLabel" destination="obe-8N-ftB" id="vTz-4M-keE"/>
+                                            <outlet property="priceLabel" destination="BvM-KS-l9u" id="2Ak-r9-35x"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="RunnerDetailTableViewCell" rowHeight="100" id="ApG-GQ-ULf" customClass="RunnerDetailTableViewCell" customModule="Demo_2c2p" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="328" width="375" height="100"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ApG-GQ-ULf" id="T36-Kk-Nc5">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="99.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="รายละเอียดผู้สมัคร" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5FM-y0-6nx">
+                                                    <rect key="frame" x="15" y="11" width="345" height="18"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="18" id="Iht-aH-wy9"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="user" translatesAutoresizingMaskIntoConstraints="NO" id="21z-2E-xP1">
+                                                    <rect key="frame" x="15" y="37" width="30" height="30"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="30" id="exV-ol-CoD"/>
+                                                        <constraint firstAttribute="height" constant="30" id="qiW-or-lTb"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ชื่อ : " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="coN-KP-wSP">
+                                                    <rect key="frame" x="53" y="37" width="314" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="21" id="1v4-SY-g33"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="วันเกิด : " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b2P-bt-8aO">
+                                                    <rect key="frame" x="53" y="66" width="299" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="21" id="DoW-sW-ja7"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="coN-KP-wSP" firstAttribute="leading" secondItem="21z-2E-xP1" secondAttribute="trailing" constant="8" id="4xP-vD-nm2"/>
+                                                <constraint firstAttribute="trailing" secondItem="coN-KP-wSP" secondAttribute="trailing" constant="8" id="7eF-tq-fIN"/>
+                                                <constraint firstItem="21z-2E-xP1" firstAttribute="leading" secondItem="T36-Kk-Nc5" secondAttribute="leadingMargin" id="85P-Hh-8oK"/>
+                                                <constraint firstItem="b2P-bt-8aO" firstAttribute="top" secondItem="coN-KP-wSP" secondAttribute="bottom" constant="8" id="EUo-tG-sgr"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="b2P-bt-8aO" secondAttribute="trailing" constant="8" id="Fwy-P9-y34"/>
+                                                <constraint firstItem="coN-KP-wSP" firstAttribute="top" secondItem="5FM-y0-6nx" secondAttribute="bottom" constant="8" id="JW0-5E-4Hs"/>
+                                                <constraint firstItem="b2P-bt-8aO" firstAttribute="leading" secondItem="coN-KP-wSP" secondAttribute="leading" id="RsX-Tx-Sce"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="5FM-y0-6nx" secondAttribute="trailing" id="UbK-fV-BLE"/>
+                                                <constraint firstItem="5FM-y0-6nx" firstAttribute="top" secondItem="T36-Kk-Nc5" secondAttribute="topMargin" id="WJI-MS-UrV"/>
+                                                <constraint firstItem="21z-2E-xP1" firstAttribute="top" secondItem="5FM-y0-6nx" secondAttribute="bottom" constant="8" id="aKg-eQ-uI4"/>
+                                                <constraint firstItem="5FM-y0-6nx" firstAttribute="leading" secondItem="T36-Kk-Nc5" secondAttribute="leadingMargin" id="dKk-Cz-bfw"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="TotalPayTableViewCell" rowHeight="80" id="ttb-lX-J8Z" customClass="TotalPayTableViewCell" customModule="Demo_2c2p" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="428" width="375" height="80"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ttb-lX-J8Z" id="9BA-M7-7Pg">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="79.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="รวมทั้งหมด" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VYr-65-vkz">
+                                                    <rect key="frame" x="15" y="11" width="80" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="80" id="HuM-bP-w3G"/>
+                                                        <constraint firstAttribute="height" constant="21" id="Rmu-y4-xq4"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="วิธีการชำระเงิน" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Ma-VF-cbk">
+                                                    <rect key="frame" x="15" y="40" width="352" height="30"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="30" id="hXv-ni-TeA"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="0Ma-VF-cbk" secondAttribute="trailing" constant="8" id="0lv-s7-xp6"/>
+                                                <constraint firstItem="0Ma-VF-cbk" firstAttribute="leading" secondItem="VYr-65-vkz" secondAttribute="leading" id="76A-Sr-L10"/>
+                                                <constraint firstItem="VYr-65-vkz" firstAttribute="leading" secondItem="9BA-M7-7Pg" secondAttribute="leadingMargin" id="NZE-3G-6fH"/>
+                                                <constraint firstItem="0Ma-VF-cbk" firstAttribute="top" secondItem="VYr-65-vkz" secondAttribute="bottom" constant="8" id="gGS-Cc-bfZ"/>
+                                                <constraint firstItem="VYr-65-vkz" firstAttribute="top" secondItem="9BA-M7-7Pg" secondAttribute="topMargin" id="qeS-h8-NiG"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="PaymentOptionTableViewCell" id="T2a-Z8-gIV" customClass="PaymentOptionTableViewCell" customModule="Demo_2c2p" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="508" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="T2a-Z8-gIV" id="k7s-QS-gzg">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ชำระผ่านเคาน์เตอร์ชำระเงิน" translatesAutoresizingMaskIntoConstraints="NO" id="Ddj-ga-fto">
+                                                    <rect key="frame" x="16" y="6" width="30" height="30"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="30" id="QX6-VW-6HO"/>
+                                                        <constraint firstAttribute="width" constant="30" id="rJi-Od-sRa"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="วิธีการชำระเงิน" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TrR-Ga-c2W">
+                                                    <rect key="frame" x="54" y="11" width="290" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="21" id="VQx-Bz-Zd3"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Ddj-ga-fto" firstAttribute="top" secondItem="k7s-QS-gzg" secondAttribute="top" constant="6" id="6jt-qd-zyy"/>
+                                                <constraint firstItem="Ddj-ga-fto" firstAttribute="leading" secondItem="k7s-QS-gzg" secondAttribute="leading" constant="16" id="Iww-Qr-ii8"/>
+                                                <constraint firstItem="TrR-Ga-c2W" firstAttribute="leading" secondItem="Ddj-ga-fto" secondAttribute="trailing" constant="8" id="irb-h3-mNu"/>
+                                                <constraint firstItem="TrR-Ga-c2W" firstAttribute="centerY" secondItem="Ddj-ga-fto" secondAttribute="centerY" id="loI-TV-dTh"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="TrR-Ga-c2W" secondAttribute="trailing" constant="16" id="oyu-2d-vf9"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="iconImage" destination="Ddj-ga-fto" id="Jrd-N3-V8W"/>
+                                            <outlet property="paymentLabel" destination="TrR-Ga-c2W" id="09d-Du-hgc"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="SUs-Fh-Oka" firstAttribute="top" secondItem="OqD-UX-vP4" secondAttribute="top" id="XMv-28-FAP"/>
+                            <constraint firstItem="OqD-UX-vP4" firstAttribute="bottom" secondItem="SUs-Fh-Oka" secondAttribute="bottom" id="krL-wY-xxO"/>
+                            <constraint firstItem="SUs-Fh-Oka" firstAttribute="leading" secondItem="OqD-UX-vP4" secondAttribute="leading" id="rn1-5J-A0V"/>
+                            <constraint firstItem="OqD-UX-vP4" firstAttribute="trailing" secondItem="SUs-Fh-Oka" secondAttribute="trailing" id="tIC-5a-nkR"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="OqD-UX-vP4"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="รายการของคุณ" id="0xF-YJ-GAk">
+                        <barButtonItem key="backBarButtonItem" title="ยกเลิก" id="eHb-pI-DY9"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="SUs-Fh-Oka" id="klk-h8-9jJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FVa-M7-IdH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1112.8" y="135.38230884557723"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="BAw-Oa-CcM">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="o9b-Ei-U7Z" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="XUB-tS-r0a">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="8b1-MR-PPV" kind="relationship" relationship="rootViewController" id="fl2-uZ-gTW"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gY3-WL-6al" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="173.59999999999999" y="135.38230884557723"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Demo Event" width="1280" height="720"/>
+        <image name="user" width="29" height="29"/>
+        <image name="ชำระผ่านเคาน์เตอร์ชำระเงิน" width="32" height="32"/>
+    </resources>
+</document>
